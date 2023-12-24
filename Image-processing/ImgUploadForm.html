@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image-Processing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: red;
+      text-align: center;
+    }
+
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 3px 0 16px 0;
+      box-sizing: border-box;
+      border-radius: 15px;
+    }
+
+    input[type="submit"] {
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bolder;
+      width: 25%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #cfcfcf;
+      color:black;
+    }
+  </style>
+</head>
+
+<body>
+    <h1>Image-Processing</h1>
+    <!-- Enctype : is a standard or predefined security , which are use to encode the image file in form body -->
+        <form action="imgProcess.php" method="post" enctype="multipart/form-data">
+          Name:<input type="text" name="name" id="name"/><br />
+          Date of Birth:<input type="date" name="dob" placeholder="date " required /><br />
+          
+          <!-- Image Input -->
+          Upload image:<input type="file" name="img" id="picture" accept="image/jpeg, image/png" required>
+          <!-- Submit Button -->
+          <input type="submit" value="submit" name="submit" /><br />
+
+        </form>
+      <!-- <script src="./script.js"></script> -->
+</body>
+
+</html>
